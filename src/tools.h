@@ -38,6 +38,8 @@ static constexpr MagicEffectClasses CombatTypeToAreaEffect(CombatType_t combatTy
 			return CONST_ME_HOLYDAMAGE;
 		case COMBAT_DEATHDAMAGE:
 			return CONST_ME_MORTAREA;
+		case COMBAT_MAGICDAMAGE:
+			return CONST_ME_MAGIC_BLUE;
 
 		default:
 			return CONST_ME_BLOCKHIT;

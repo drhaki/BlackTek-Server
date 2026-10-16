@@ -147,6 +147,7 @@ static CombatType_t parseCombatType(std::string_view str)
 	if (str == "ice")                         return COMBAT_ICEDAMAGE;
 	if (str == "holy")                        return COMBAT_HOLYDAMAGE;
 	if (str == "death")                       return COMBAT_DEATHDAMAGE;
+	if (str == "magic")                       return COMBAT_MAGICDAMAGE;
 	if (str == "lifedrain")                   return COMBAT_LIFEDRAIN;
 	if (str == "manadrain")                   return COMBAT_MANADRAIN;
 	if (str == "healing")                     return COMBAT_HEALING;

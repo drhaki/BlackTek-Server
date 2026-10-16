@@ -3447,6 +3447,7 @@ void LuaScriptInterface::registerFunctions()
 		setDmgField("Ice",       COMBAT_ICEDAMAGE);
 		setDmgField("Holy",      COMBAT_HOLYDAMAGE);
 		setDmgField("Death",     COMBAT_DEATHDAMAGE);
+		setDmgField("Magic",	 COMBAT_MAGICDAMAGE);
 
 		lua_setfield(luaState, -2, "DamageType");
 		lua_pop(luaState, 1);
@@ -20046,6 +20047,9 @@ int LuaScriptInterface::luaMonsterTypeCombatImmunities(lua_State* L)
 				pushBoolean(L, true);
 			} else if (immunity == "death") {
 				monsterType->info.damageImmunities |= COMBAT_DEATHDAMAGE;
+				pushBoolean(L, true);
+			} else if (immunity == "magic") {
+				monsterType->info.damageImmunities |= COMBAT_MAGICDAMAGE;
 				pushBoolean(L, true);
 			} else if (immunity == "lifedrain") {
 				monsterType->info.damageImmunities |= COMBAT_LIFEDRAIN;

@@ -196,8 +196,9 @@ enum CombatType_t : uint16_t {
 	COMBAT_ICEDAMAGE = 1 << 9,
 	COMBAT_HOLYDAMAGE = 1 << 10,
 	COMBAT_DEATHDAMAGE = 1 << 11,
+	COMBAT_MAGICDAMAGE = 1 << 12,
 
-	COMBAT_COUNT = 12
+	COMBAT_COUNT = 13
 };
 
 enum CombatParam_t {

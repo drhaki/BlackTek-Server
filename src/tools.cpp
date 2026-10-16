@@ -640,6 +640,7 @@ static CombatTypeNames combatTypeNames = {
 	{COMBAT_ICEDAMAGE, 		"ice"},
 	{COMBAT_HOLYDAMAGE, 		"holy"},
 	{COMBAT_DEATHDAMAGE, 		"death"},
+	{COMBAT_MAGICDAMAGE, 		"magic"},
 };
 
 static AmmoTypeNames ammoTypeNames = {
@@ -885,6 +886,8 @@ size_t combatTypeToIndex(CombatType_t combatType)
 			return 10;
 		case COMBAT_DEATHDAMAGE:
 			return 11;
+		case COMBAT_MAGICDAMAGE:
+			return 12;
 		default:
 			return 0;
 	}
